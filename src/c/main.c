@@ -258,6 +258,7 @@ void handle_init(void) {
   ui_register_statuschange(device_status_change);
   reset_inactivity_timer();
   // Initializing comms will trigger phone JS to fetch device list
+  APP_LOG(APP_LOG_LEVEL_DEBUG, "init comms");
   init_comms();
 }
 
